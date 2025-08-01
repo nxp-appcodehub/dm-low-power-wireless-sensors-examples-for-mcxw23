@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "type": "mcuxpresso-debug",
+      "name": "debug",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+    
+      "executable": "${workspaceFolder}/debug/wireless_uart_freertos.elf",
+      "stopAtSymbol": "main",
+      "probeSerialNumber": "ITTFDOK1BWS5Z",
+      "isAttach": false,
+      "probeType": "",
+      "skipBuildBeforeDebug": false,
+      "skipPreFlashActions": true,
+    
+      "gdbInitCommands": [
+        "set remotetimeout 600",
+        "set debug-file-directory",
+        "set non-stop off"
+      ],
+    
+      "gdbServerConfigs": {
+        "linkserver": {
+          "device": "MCXW236B:FRDM-MCXW23"
+        },
+    		"segger": {},
+    		"pemicro": {}
+      },
+    
+      "showDevDebugOutput": "none"
+    }
+  ]
+}

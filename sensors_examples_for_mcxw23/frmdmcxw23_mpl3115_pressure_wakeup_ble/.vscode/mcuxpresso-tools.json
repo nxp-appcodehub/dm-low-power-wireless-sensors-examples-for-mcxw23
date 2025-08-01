@@ -1,0 +1,8 @@
+{
+  "version": "25.3",
+  "toolchainPath": "C:\\NXP\\MCUXpressoIDE_24.12.148\\ide\\tools",
+  "linkedProjects": [],
+  "trustZoneType": "none",
+  "multicoreType": "none",
+  "projectType": "cmake-freestanding"
+}

@@ -1,0 +1,34 @@
+<data:item xmlns:data="data" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="data ../../xsd/alp.xsd" type="demo" format="projectfile" versionSchema="1.0.0" name="low power sensors examples for MCXW23" uuid="a8c65ea0-26b2-4fe9-8180-70f58c7b4980">
+    <display_title>
+        Low-Power Sensors Examples for MCXW23
+    </display_title>
+    <overview>
+        <![CDATA[These examples show low-power sensors attach with FRDM-MCXW236B. It uses on-board FXLS8974CF 3-axis accelerometer, NMH1000 magnetic switch and MPL3115 pressure/altimeter sensor to demonstrate how to jump start your low-power wireless sensing application development with MCXW23x and transmit ALERT to connected end user via BLE wireless UART. Additionally, the project contains several demo applications to showcase how to configure an accelerometer, magnetic switch sensor and pressure/altimeter sensor in various modes.<br />]]>
+    </overview>
+    <toolchains>
+        <toolchain name="mcux"></toolchain>
+		<toolchain name="vscode"></toolchain>
+    </toolchains>
+    <families>
+        <family name="mcx"></family>
+    </families>
+    <nxp_compatible_hw>
+        <hw id="FRDM-MCXW23"></hw>
+    </nxp_compatible_hw>
+    <nxp_ebh_hw>
+        <ebh id="nxp_frdmstbc_p3115"></ebh>
+        <ebh id="nxp_frdm_stbi_nmh1000"></ebh>
+        <ebh id="mikroe_hall_switch_3_click"></ebh>
+        <ebh id="mikroe_accel_pressure_click"></ebh>
+    </nxp_ebh_hw>
+    <peripherals>
+        <peripheral name="i2c"></peripheral>
+        <peripheral name="uart"></peripheral>
+        <peripheral name="sensor"></peripheral>
+    </peripherals>
+    <categories>
+        <category name="low_power"></category>
+        <category name="sensor"></category>
+        <category name="wireless_connectivity"></category>
+    </categories>
+</data:item>
