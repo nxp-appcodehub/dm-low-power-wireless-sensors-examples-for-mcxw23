@@ -65,7 +65,7 @@
 ### 3.1 Step 1
 ### 3.1 Hardware Setup<a name="step3.1"></a>
 
-#### 3.1.1 Step 1: Connect Hardware
+#### 3.1.1 Step 1: Connect Hardware<a name="step3.1.1"></a>
 - Know about the Hardware Boards that you will need:<br><br>
 [<img src="./images/HW_Setup.jpg" width="800"/>](HW_Setup.jpg)<br>
 - For running MCXW23 based FXLS8974CF motion wakeup example, the HW setup is shown below:<br><br>
@@ -94,19 +94,36 @@
   [NXP IoT ToolBox App - Apple Store](https://apps.apple.com/us/app/iot-toolbox/id1362450908)
 
 
-#### 3.2.2 Step 2: Get example projects from Application Code Hub
-- Go to "QUICKSTART PANEL" on VS Code and click on "Application Code Hub".
-- Search for "low-power sensors mcxw23" and select the searched ACH example project.
-- Choose the local folder where you would like to save the chose example project.
+#### 3.2.2 Step 2: Get example projects from Application Code Hub (ACH) Github
+- Open VS Code and select "Clone Git Repository" option.
+<img src="./images/CloneGit.jpg" width="400"/><br>
+- VS Code will open a pop-up to allow you to enter the Git repository URL.
+<img src="./images/ProvideRepoURL.jpg" width="400"/><br>
+- Copy the ACH gihub URL:"https://github.com/nxp-appcodehub/dm-low-power-wireless-sensors-examples-for-mcxw23.git" and select the the "Clone from URL" option.
+<img src="./images/ClonefromGithub.BMP" width="400"/><br>
+- It will ask for local destination directory where you would like to save the cloned repository, create a "git" folder under C: drive and select that folder.
+<img src="./images/GithubStorage.jpg" width="400"/><br>
+- VS Code will start cloning the repository into the destination folder.
 - Click on "Import Project(s)" to start importing the chosen ACH project(s).
-- VS Code will start cloning the project(s) into your folder.
-- Select which project(s) to import or you can select all projects.
-- Select the ARM cross toolchain version.
-- The selected ACH project(s) are now imported on the VS Code workspace.
+<img src="./images/ImportProject.jpg" width="400"/><br>
+- Select the cloned repository destination folder i.e. "C:/git/dm-low-power-wireless-sensors-examples-for-mcxw23".
+<img src="./images/SelectRepoFolder.jpg" width="400"/><br>
+- Import Demo#1 "frmdmcxw23_fxls8974cf_motion_wakeup_ble" project into VS code workspace:
+<img src="./images/SelectProject1.jpg" width="400"/><br>
+- Select the toolchain version: ARM GNU Toolchain.
+- The selected "frmdmcxw23_fxls8974cf_motion_wakeup_ble" project is now imported on the VS Code workspace.
+- Import Demo#2 "frmdmcxw23_nmh1000_mag_wakeup_ble" project into VS code workspace:
+<img src="./images/SelectProject2.jpg" width="400"/><br>
+- Select the toolchain version: ARM GNU Toolchain.
+- The selected "frmdmcxw23_nmh1000_mag_wakeup_ble" project is now imported on the VS Code workspace.
+- Import Demo#3 "frmdmcxw23_mpl3115_pressure_wakeup_ble" project into VS code workspace:
+<img src="./images/SelectProject3.jpg" width="400"/><br>
+- Select the toolchain version: ARM GNU Toolchain.
+- The selected "frmdmcxw23_mpl3115_pressure_wakeup_ble" project is now imported on the VS Code workspace.
 
 #### 3.2.3 Step 3: Build example projects
-- Select example project that you want to open and run.
-- Connect the appropriate sensor shield board (Refer to section 3.1.1):
+- Select example project that you want to build and run.
+- Connect the appropriate sensor shield board (Refer to [section 3.1.1](#3.1.1)):
   - If you want to run FXLS8974CF examples then you dont need to connect any sensor shield board to FRDM-MCXW236B.
   - If you want to run NMH1000 based example then connect FRDMSTBI-NMH1000 or Hall Switch 3 click board to FRDM-MCXW236B.
   - If you want to run MPL3115 based examples then connect FRDMSTBC-P3115 or Accel&Pressure click board to to FRDM-MCXW236B.
@@ -143,7 +160,7 @@
   [<img src="./images/Motion_Tampering_Detect.jpg" width="400"/>](Motion_Tampering_Detect.pjpgng)
 - FRDM-MCXW236B board will also show "RED" LED status. The "RED" LED status will continously remain ON till tampering/motion detected.
 - If there is no further tampering/motion detected for continous ~5 sec, the on-board FXLS8974CF accelerometer will detect no-motion and update the status message
-  on wirless UART app. The "RED" LED status on FRDM-MCXW236B board will also go OFF.
+  "Your Asset is Safe" on wirless UART app. The "RED" LED status on FRDM-MCXW236B board will also go OFF.
   
 ### 4.2 Run Demo 2: Low-Power Magnetic Wakeup with NMH1000 using BLE Wireless UART<a name="step4.2"></a>
 #### 4.2.1 Step 1: Flash the demo firmware on FRDM-MCXW236B board
@@ -203,6 +220,9 @@
   [<img src="./images/Pressure_Tampering_Detect.jpg" width="400"/>](Magnetic_Tampering_Detect.jpg)
 - FRDM-MCXW71 board will also show "RED" LED status. The "RED" LED status will continously remain ON for few seconds to show alert.
 - After "RED" LED goes OFF, the Wireless UART app will show message "Your Asset is Safe".
+- Then you can try applying pressure on MPL3115 sensor again.
+
+#### Congratulations! You have successfully executed all the 3 demos. Now think of various applications where you can use these demos.
 
 ## 5. Support<a name="step5"></a>
 - Reach out to NXP Sensors Community page for more support - [NXP Community](https://community.nxp.com/t5/forums/postpage/choose-node/true?_gl=1*fxvsn4*_ga*MTg2MDYwNjMzMy4xNzAyNDE4NzM0*_ga_WM5LE0KMSH*MTcwMjQxODczMy4xLjEuMTcwMjQxODczNi4wLjAuMA..)
