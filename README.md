@@ -95,28 +95,28 @@
 
 
 #### 3.2.2 Step 2: Get example projects from Application Code Hub (ACH) Github
-- Open VS Code and select "Clone Git Repository" option.
+- Open VS Code and select "Clone Git Repository" option.<br><br>
 <img src="./images/CloneGit.jpg" width="400"/><br>
-- VS Code will open a pop-up to allow you to enter the Git repository URL.
+- VS Code will open a pop-up to allow you to enter the Git repository URL.<br><br>
 <img src="./images/ProvideRepoURL.jpg" width="400"/><br>
-- Copy the ACH gihub URL:"https://github.com/nxp-appcodehub/dm-low-power-wireless-sensors-examples-for-mcxw23.git" and select the the "Clone from URL" option.
-<img src="./images/ClonefromGithub.BMP" width="400"/><br>
-- It will ask for local destination directory where you would like to save the cloned repository, create a "git" folder under C: drive and select that folder.
+- Copy the ACH gihub URL:"https://github.com/nxp-appcodehub/dm-low-power-wireless-sensors-examples-for-mcxw23.git" and select the the "Clone from URL" option.<br><br>
+<img src="./images/ClonefromGithub.jpg" width="400"/><br>
+- It will ask for local destination directory where you would like to save the cloned repository, create a "git" folder under C: drive and select that folder.<br><br>
 <img src="./images/GithubStorage.jpg" width="400"/><br>
 - VS Code will start cloning the repository into the destination folder.
-- Click on "Import Project(s)" to start importing the chosen ACH project(s).
+- Click on "Import Project(s)" to start importing the chosen ACH project(s).<br><br>
 <img src="./images/ImportProject.jpg" width="400"/><br>
-- Select the cloned repository destination folder i.e. "C:/git/dm-low-power-wireless-sensors-examples-for-mcxw23".
+- Select the cloned repository destination folder i.e. "C:/git/dm-low-power-wireless-sensors-examples-for-mcxw23".<br><br>
 <img src="./images/SelectRepoFolder.jpg" width="400"/><br>
-- Import Demo#1 "frmdmcxw23_fxls8974cf_motion_wakeup_ble" project into VS code workspace:
+- Import Demo#1 "frmdmcxw23_fxls8974cf_motion_wakeup_ble" project into VS code workspace:<br><br>
 <img src="./images/SelectProject1.jpg" width="400"/><br>
 - Select the toolchain version: ARM GNU Toolchain.
 - The selected "frmdmcxw23_fxls8974cf_motion_wakeup_ble" project is now imported on the VS Code workspace.
-- Import Demo#2 "frmdmcxw23_nmh1000_mag_wakeup_ble" project into VS code workspace:
+- Import Demo#2 "frmdmcxw23_nmh1000_mag_wakeup_ble" project into VS code workspace:<br><br>
 <img src="./images/SelectProject2.jpg" width="400"/><br>
 - Select the toolchain version: ARM GNU Toolchain.
 - The selected "frmdmcxw23_nmh1000_mag_wakeup_ble" project is now imported on the VS Code workspace.
-- Import Demo#3 "frmdmcxw23_mpl3115_pressure_wakeup_ble" project into VS code workspace:
+- Import Demo#3 "frmdmcxw23_mpl3115_pressure_wakeup_ble" project into VS code workspace:<br><br>
 <img src="./images/SelectProject3.jpg" width="400"/><br>
 - Select the toolchain version: ARM GNU Toolchain.
 - The selected "frmdmcxw23_mpl3115_pressure_wakeup_ble" project is now imported on the VS Code workspace.
