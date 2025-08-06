@@ -26,6 +26,8 @@
 - These example demonstrates ease-of-enablement using NXP's FRDM-MCXW236B and sensors development ecosystem to accelerate prototyping for your multiple such applications.<br><br>
 [<img src="./images/Sensors_Development_Ecosystem.jpg" width="800"/>](Sensors_Development_Ecosystem.PNG)<br>
 
+- Note: These wireless sensors examples for NMH1000 and MPL3115 sensors work with both sensor shield boards (e.g. FRDMSTBI-NMH1000 and FRDMSTBC-P3115) and click boards (e.g. Hall Switch 3 click and Accel&Pressure click). User can choose to use either sensor shield board or click board and these examples will run seamlessly.
+
 > ##### Boards: FRDM-MCXW23
 > ##### Accessories: On-Board Accelerometer FXLS8974CF, nxp_frdm_stbi_nmh1000, nxp_frdmstbc_p3115, mikroe_hall_switch_3_click, mikroe_accel_pressure_click
 > ##### Categories: Sensor, Wireless Connectivity, Tools
