@@ -26,7 +26,7 @@
 - These example demonstrates ease-of-enablement using NXP's FRDM-MCXW236B and sensors development ecosystem to accelerate prototyping for your multiple such applications.<br><br>
 [<img src="./images/Sensors_Development_Ecosystem.jpg" width="800"/>](Sensors_Development_Ecosystem.PNG)<br>
 
-- Note: These wireless sensors examples for NMH1000 and MPL3115 sensors work with both sensor shield boards (e.g. FRDMSTBI-NMH1000 and FRDMSTBC-P3115) and click boards (e.g. Hall Switch 3 click and Accel&Pressure click). User can choose to use either sensor shield board or click board and these examples will run seamlessly.
+- Note: These wireless sensors examples for NMH1000 and MPL3115 sensors work with NXP sensor shield boards (e.g. NXP FRDMSTBI-NMH1000 and NXP FRDMSTBC-P3115) as well as with MikroE click boards (e.g. MikroE Hall Switch 3 click and MikroE Accel&Pressure click). User can choose to use either NXP sensor shield board or MikroE click board and these examples will run seamlessly. For more details on these sensor expansion boards, refer to section 2.
 
 > ##### Boards: FRDM-MCXW23
 > ##### Accessories: On-Board Accelerometer FXLS8974CF, nxp_frdm_stbi_nmh1000, nxp_frdmstbc_p3115, mikroe_hall_switch_3_click, mikroe_accel_pressure_click
@@ -53,11 +53,11 @@
 - NXP IoT ToolBox mobile app providing user-friendly way to test the BLE demo applications.
 
 ## 2. Hardware<a name="step2"></a>
-- FRDM-MCXW236B MCU board with on-board FXLS8974CF accelerometer
-- [FRDMSTBI-NMH1000](https://www.nxp.com/part/FRDMSTBI-NMH1000) expansion shield board for NMH1000 magnetic switch sensor.
-- [FRDMSTBC-P3115](https://www.nxp.com/part/FRDMSTBC-P3115) expansion shield board for MPL3115 absolute pressure sensor.
-- [Hall Switch 3 click](https://www.mikroe.com/hall-switch-3-click) expansion click board for NMH1000 magnetic switch sensor.
-- [Accel & Pressure click](https://www.mikroe.com/accelpressure-click) expansion click board for MPL3115 absolute pressure sensor.
+- [FRDM-MCXW236B](https://www.nxp.com/design/design-center/development-boards-and-designs/FRDM-MCXN236) MCU board with on-board FXLS8974CF accelerometer
+- [FRDMSTBI-NMH1000](https://www.nxp.com/part/FRDMSTBI-NMH1000) expansion shield board from NXP for NMH1000 magnetic switch sensor.
+- [FRDMSTBC-P3115](https://www.nxp.com/part/FRDMSTBC-P3115) expansion shield board from NXP for MPL3115 absolute pressure sensor.
+- [Hall Switch 3 click](https://www.mikroe.com/hall-switch-3-click) expansion click board from MikroE for NMH1000 magnetic switch sensor.
+- [Accel & Pressure click](https://www.mikroe.com/accelpressure-click) expansion click board from MikroE for MPL3115 absolute pressure.sensor.
 - Personal Computer
 - Mini/micro C USB cable
 - Android or Apple Mobile Phone supprting BLE wireless connectivity.
