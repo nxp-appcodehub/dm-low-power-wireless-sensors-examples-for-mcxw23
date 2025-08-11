@@ -3,7 +3,7 @@
 
 ## Low power wireless sensors examples for MCXW23
 
-- These examples demonstrate the ease of energy-efficient low-power wireless sensing applications development with FRDM-MCXW236B and low-power sensors expansion boards. It uses on-board FXLS8974CF 3-axis accelerometer, NMH1000 magnetic switch and MPL3115 pressure/altimeter sensor to demonstrate low-power wireless sensing application development with MCXW23x and transmit ALERT to connected end user via BLE wireless UART.<br>
+- These examples demonstrate the ease of energy-efficient low-power wireless sensing applications development with FRDM-MCXW23 and low-power sensors expansion boards. It uses on-board FXLS8974CF 3-axis accelerometer, NMH1000 magnetic switch and MPL3115 pressure/altimeter sensor to demonstrate low-power wireless sensing application development with MCXW23x and transmit ALERT to connected end user via BLE wireless UART.<br>
 
 - See below for more details on the MCXW23 MCU and low-power sensors used in these examples:<br><br>
 
@@ -23,7 +23,7 @@
   - Home security, access control
   - Battery-operated connected sensing nodes etc.<br><br>
 
-- These example demonstrates ease-of-enablement using NXP's FRDM-MCXW236B and sensors development ecosystem to accelerate prototyping for your multiple such applications.<br><br>
+- These example demonstrates ease-of-enablement using NXP's FRDM-MCXW23 and sensors development ecosystem to accelerate prototyping for your multiple such applications.<br><br>
 [<img src="./images/Sensors_Development_Ecosystem.jpg" width="800"/>](Sensors_Development_Ecosystem.PNG)<br>
 
 - Note: These wireless sensors examples for NMH1000 and MPL3115 sensors work with NXP sensor shield boards (e.g. NXP FRDMSTBI-NMH1000 and NXP FRDMSTBC-P3115) as well as with MikroE click boards (e.g. MikroE Hall Switch 3 click and MikroE Accel&Pressure click). User can choose to use either NXP sensor shield board or MikroE click board and these examples will run seamlessly. For more details on these sensor expansion boards, refer to section 2.
@@ -48,12 +48,12 @@
 
 ## 1. Software<a name="step1"></a>
 - IoT Sensing SDK (ISSDK) v1.8 offered as middleware in MCUXpresso SDK for supported platforms
-- MCUXpresso SDK v25.06.00 for FRDM-MCXW236B or newer
+- MCUXpresso SDK v25.06.00 for FRDM-MCXW23 or newer
 - VS Code v1.100.1
 - NXP IoT ToolBox mobile app providing user-friendly way to test the BLE demo applications.
 
 ## 2. Hardware<a name="step2"></a>
-- [FRDM-MCXW236B](https://www.nxp.com/design/design-center/development-boards-and-designs/FRDM-MCXN236) MCU board with on-board FXLS8974CF accelerometer
+- [FRDM-MCXW23](https://www.nxp.com/design/design-center/development-boards-and-designs/FRDM-MCXW23) MCU board with on-board FXLS8974CF accelerometer
 - [FRDMSTBI-NMH1000](https://www.nxp.com/part/FRDMSTBI-NMH1000) expansion shield board from NXP for NMH1000 magnetic switch sensor.
 - [FRDMSTBC-P3115](https://www.nxp.com/part/FRDMSTBC-P3115) expansion shield board from NXP for MPL3115 absolute pressure sensor.
 - [Hall Switch 3 click](https://www.mikroe.com/hall-switch-3-click) expansion click board from MikroE for NMH1000 magnetic switch sensor.
@@ -91,7 +91,7 @@
 - Download and Install [VS Code IDE v1.100.1 or newer](https://code.visualstudio.com/download)
 - Download and Install [MCUXpresso Installer for VS Code](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki/Dependency-Installation)
 - Follow the [Getting started with MCUXpresso for VS code](https://www.nxp.com/design/design-center/training/TIP-GETTING-STARTED-WITH-MCUXPRESSO-FOR-VS-CODE)
-- Download and Install MCUXpresso SDK v25.06.00 for FRDM-MCXW236B or newer
+- Download and Install MCUXpresso SDK v25.06.00 for FRDM-MCXW23 or newer
 - Install [NXP IoT ToolBox App - Android Store](https://play.google.com/store/apps/details?id=com.freescale.kinetisbletoolbox&hl=en_US&pli=1) or
   [NXP IoT ToolBox App - Apple Store](https://apps.apple.com/us/app/iot-toolbox/id1362450908)
 
@@ -126,26 +126,26 @@
 #### 3.2.3 Step 3: Build example projects
 - Select example project that you want to build and run.
 - Connect the appropriate sensor shield board (Refer to [section 3.1.1](#3.1.1)):
-  - If you want to run FXLS8974CF examples then you dont need to connect any sensor shield board to FRDM-MCXW236B.
-  - If you want to run NMH1000 based example then connect FRDMSTBI-NMH1000 or Hall Switch 3 click board to FRDM-MCXW236B.
-  - If you want to run MPL3115 based examples then connect FRDMSTBC-P3115 or Accel&Pressure click board to to FRDM-MCXW236B.
+  - If you want to run FXLS8974CF examples then you dont need to connect any sensor shield board to FRDM-MCXW23.
+  - If you want to run NMH1000 based example then connect FRDMSTBI-NMH1000 or Hall Switch 3 click board to FRDM-MCXW23.
+  - If you want to run MPL3115 based examples then connect FRDMSTBC-P3115 or Accel&Pressure click board to to FRDM-MCXW23.
 - Right click on chosen project and select "Prestine Build/Rebuild Project" to start clean build the project.
 
 ## 4 Run Demos<a name="step4"></a>
 
 ### 4.1 Run Demo 1: Low-Power Motion Wakeup with FXLS8974CF using BLE Wireless UART<a name="step4.1"></a>
-#### 4.1.1 Step 1: Flash the demo firmware on FRDM-MCXW236B board
-- Connect a USB-C cable between the host PC and the MCU-Link USB port on the target FRDM-MCXW236B board.
+#### 4.1.1 Step 1: Flash the demo firmware on FRDM-MCXW23 board
+- Connect a USB-C cable between the host PC and the MCU-Link USB port on the target FRDM-MCXW23 board.
 - Choose the "frmdmcxw23_fxls8974cf_motion_wakeup_ble" project.
 - Right click on the project and select "Debug".
 - Debugger will start downloading the program to device.
 - Click on “Continue” button or press "F5" from your keyboard to resume running the downloaded program on device.
 - Click on “Terminate” button to terminate the debug session.
-- Disconnect the USB-C cable connected to FRDM-MCXW236B and reconnect.
+- Disconnect the USB-C cable connected to FRDM-MCXW23 and reconnect.
 
 #### 4.1.2 Step 2: Start Advertising
 - After that you should see white/bluish LED blinking and when you open a serial terminal (with baudrate 115200). You will see W UART starting as GAP central.
-- On the FRDM-MCXW236B board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
+- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
 <img src="./images/AdvertisingMode.jpg" width="400"/><br>
 
 
@@ -157,26 +157,26 @@
   [<img src="./images/Connect_Device.png" width="400"/>](Connect_Device.png)
 
 #### 4.1.4 Step 4: Run the FXLS8974CF motion wakeup Demo
-- When you show tampering/movement on the FRDM-MCXW236B, the on-board FXLS8974CF accelerometer detects the motion and wakes-up.
+- When you show tampering/movement on the FRDM-MCXW23, the on-board FXLS8974CF accelerometer detects the motion and wakes-up.
 - At that point, you will see Wireless UART app showing ALERT message as shown below:<br><br>
   [<img src="./images/Motion_Tampering_Detect.jpg" width="400"/>](Motion_Tampering_Detect.pjpgng)
-- FRDM-MCXW236B board will also show "RED" LED status. The "RED" LED status will continously remain ON till tampering/motion detected.
+- FRDM-MCXW23 board will also show "RED" LED status. The "RED" LED status will continously remain ON till tampering/motion detected.
 - If there is no further tampering/motion detected for continous ~5 sec, the on-board FXLS8974CF accelerometer will detect no-motion and update the status message
-  "Your Asset is Safe" on wirless UART app. The "RED" LED status on FRDM-MCXW236B board will also go OFF.
+  "Your Asset is Safe" on wirless UART app. The "RED" LED status on FRDM-MCXW23 board will also go OFF.
   
 ### 4.2 Run Demo 2: Low-Power Magnetic Wakeup with NMH1000 using BLE Wireless UART<a name="step4.2"></a>
-#### 4.2.1 Step 1: Flash the demo firmware on FRDM-MCXW236B board
-- Connect a USB-C cable between the host PC and the MCU-Link USB port on the target FRDM-MCXW236B board.
+#### 4.2.1 Step 1: Flash the demo firmware on FRDM-MCXW23 board
+- Connect a USB-C cable between the host PC and the MCU-Link USB port on the target FRDM-MCXW23 board.
 - Choose the "frmdmcxw23_nmh1000_mag_wakeup_ble" project.
 - Right click on the project and select "Debug".
 - Debugger will start downloading the program to device.
 - Click on “Continue” button or press "F5" from your keyboard to resume running the downloaded program on device.
 - Click on “Terminate” button to terminate the debug session.
-- Disconnect the USB-C cable connected to FRDM-MCXW236B and reconnect.
+- Disconnect the USB-C cable connected to FRDM-MCXW23 and reconnect.
 
 #### 4.2.2 Step 2: Start Advertising
 - After that you should see white/bluish LED blinking and when you open a serial terminal (with baudrate 115200). You will see W UART starting as GAP central.
-- On the FRDM-MCXW236B board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
+- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
 <img src="./images/AdvertisingMode.jpg" width="400"/><br>
 
 
@@ -188,24 +188,24 @@
   [<img src="./images/Connect_Device.png" width="400"/>](Connect_Device.png)
 
 #### 4.2.4 Step 4: Run the NMH1000 mag wakeup Demo
-- When you put a magnet near to the NMH1000 sensor to show tampering on the FRDM-MCXW236B, NMH1000 detects change in magnetic field and wakes-up.
+- When you put a magnet near to the NMH1000 sensor to show tampering on the FRDM-MCXW23, NMH1000 detects change in magnetic field and wakes-up.
 - At that point, you will see Wireless UART app showing ALERT message as shown below:<br><br>
   [<img src="./images/Magnetic_Tampering_Detect.jpg" width="400"/>](Magnetic_Tampering_Detect.jpg)
-- FRDM-MCXW236B board will also show "RED" LED status. The "RED" LED status will continously remain ON till tampering/magnetic field change detected.
+- FRDM-MCXW23 board will also show "RED" LED status. The "RED" LED status will continously remain ON till tampering/magnetic field change detected.
 
 ### 4.3 Run Demo 3: Low-Power Pressure Wakeup with MPL3115 using BLE Wireless UART<a name="step4.3"></a>
-#### 4.3.1 Step 1: Flash the demo firmware on FRDM-MCXW236B board
-- Connect a USB-C cable between the host PC and the MCU-Link USB port on the target FRDM-MCXW236B board.
+#### 4.3.1 Step 1: Flash the demo firmware on FRDM-MCXW23 board
+- Connect a USB-C cable between the host PC and the MCU-Link USB port on the target FRDM-MCXW23 board.
 - Choose the "frmdmcxw23_mpl3115_pressure_wakeup_ble" project.
 - Right click on the project and select "Debug".
 - Debugger will start downloading the program to device.
 - Click on “Continue” button or press "F5" from your keyboard to resume running the downloaded program on device.
 - Click on “Terminate” button to terminate the debug session.
-- Disconnect the USB-C cable connected to FRDM-MCXW236B and reconnect.
+- Disconnect the USB-C cable connected to FRDM-MCXW23 and reconnect.
 
 #### 4.3.2 Step 2: Start Advertising
 - After that you should see white/bluish LED blinking and when you open a serial terminal (with baudrate 115200). You will see W UART starting as GAP central.
-- On the FRDM-MCXW236B board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
+- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
 <img src="./images/AdvertisingMode.jpg" width="400"/><br>
 
 
