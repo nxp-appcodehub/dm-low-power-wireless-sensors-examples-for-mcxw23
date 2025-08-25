@@ -217,10 +217,10 @@
   [<img src="./images/Connect_Device.png" width="400"/>](Connect_Device.png)
 
 #### 4.3.4 Step 4: Run the MPL3115 pressure wakeup Demo
-- When you press/apply pressure (keep pressing) with your index finger to the MPL3115 sensor to show tampering on the FRDM-MCXW71, MPL3115 sensor detects change in pressure and wakes-up.
+- When you press/apply pressure (keep pressing) with your index finger to the MPL3115 sensor to show tampering on the FRDM-MCXW23, MPL3115 sensor detects change in pressure and wakes-up.
 - At that point, you will see Wireless UART app showing ALERT message as shown below:<br><br>
   [<img src="./images/Pressure_Tampering_Detect.jpg" width="400"/>](Magnetic_Tampering_Detect.jpg)
-- FRDM-MCXW71 board will also show "RED" LED status. The "RED" LED status will continously remain ON for few seconds to show alert.
+- FRDM-MCXW23 board will also show "RED" LED status. The "RED" LED status will continously remain ON for few seconds to show alert.
 - After "RED" LED goes OFF, the Wireless UART app will show message "Your Asset is Safe".
 - Then you can try applying pressure on MPL3115 sensor again.
 

@@ -22,7 +22,7 @@
     
       "gdbServerConfigs": {
         "linkserver": {
-          "device": "MCXW236B:FRDM-MCXW23"
+          "device": "MCXW236:FRDM-MCXW23"
         },
     		"segger": {},
     		"pemicro": {}
