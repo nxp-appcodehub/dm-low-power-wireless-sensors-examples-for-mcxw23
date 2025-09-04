@@ -89,9 +89,20 @@
 
 #### 3.2.1 Step 1: Download and Install required Software(s)
 - Download and Install [VS Code IDE v1.100.1 or newer](https://code.visualstudio.com/download)
-- Download and Install [MCUXpresso Installer for VS Code](https://github.com/nxp-mcuxpresso/vscode-for-mcux/wiki/Dependency-Installation)
-- Follow the [Getting started with MCUXpresso for VS code](https://www.nxp.com/design/design-center/training/TIP-GETTING-STARTED-WITH-MCUXPRESSO-FOR-VS-CODE)
-- Download and Install MCUXpresso SDK v25.06.00 for FRDM-MCXW23 or newer
+- Install MCUXpresso for VS Code Extension
+  - Open VS Code.
+  - Open the Extensions Marketplace (press Ctrl+Shift+X).
+  - Search "MCUXpresso" in the extension search window at the top left.
+<br><br>
+<img src="./images/MCUXpressoVSCode.jpg" width="400"/><br>
+  - Click on Install button in the extension overview.
+  - This will install the MCUXpresso extension for VS Code.
+- Download and Install [MCUXpresso Installer](https://www.nxp.com/lgfiles/updates/mcuxpresso/MCUXpressoInstaller.exe)
+  - You can select one or multiple items from the available list. Once at least one package is selected, the two top-right buttons "Install" and "Show details" become enabled.
+  - Select “Software kits” items (MCUXpresso SDK Developer, Zephyr Developer), select Arm components items (all), select Debug Probes Software item (all) and rest of the items can be selected as required.
+  <br><br>
+<img src="./images/MCUXpressoInstaller.jpg" width="400"/><br>
+  - Click on “Install” button to start installing selected items.
 - Install [NXP IoT ToolBox App - Android Store](https://play.google.com/store/apps/details?id=com.freescale.kinetisbletoolbox&hl=en_US&pli=1) or
   [NXP IoT ToolBox App - Apple Store](https://apps.apple.com/us/app/iot-toolbox/id1362450908)
 
@@ -145,12 +156,16 @@
 
 #### 4.1.2 Step 2: Start Advertising
 - After that you should see white/bluish LED blinking and when you open a serial terminal (with baudrate 115200). You will see W UART starting as GAP central.
-- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
+- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.
+<br><br>
+<img src="./images/SW5SW2.jpg" width="400"/><br>
+<br><br>
 <img src="./images/AdvertisingMode.jpg" width="400"/><br>
 
 
 #### 4.1.3 Step 3: Connect to the IoT ToolBox App
-- Open the installed NXP IoT Toolbox (available from Play Store and App Store) on your mobile phone. Make sure bluetooth connection is ON.
+- Open the installed NXP IoT Toolbox (available from Play Store and App Store) on your mobile phone.
+- Make sure Bluetooth connection is ON, and the location is ON.
 - Inside the application, click on the Wireless UART widget. Scan should start automatically.<br><br>
   [<img src="./images/Wireless_UART.png" width="400"/>](Wireless_UART.png)
 - When a device called NXP_WU appears, click on it. Your phone should now be connecting to the board.<br><br>
@@ -176,12 +191,16 @@
 
 #### 4.2.2 Step 2: Start Advertising
 - After that you should see white/bluish LED blinking and when you open a serial terminal (with baudrate 115200). You will see W UART starting as GAP central.
-- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
+- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.
+<br><br>
+<img src="./images/SW5SW2.jpg" width="400"/><br>
+<br><br>
 <img src="./images/AdvertisingMode.jpg" width="400"/><br>
 
 
 #### 4.2.3 Step 3: Connect to the IoT ToolBox App
-- Open the installed NXP IoT Toolbox (available from Play Store and App Store) on your mobile phone. Make sure bluetooth connection is ON.
+- Open the installed NXP IoT Toolbox (available from Play Store and App Store) on your mobile phone.
+- Make sure Bluetooth connection is ON, and the location is ON.
 - Inside the application, click on the Wireless UART widget. Scan should start automatically.<br><br>
   [<img src="./images/Wireless_UART.png" width="400"/>](Wireless_UART.png)
 - When a device called NXP_WU appears, click on it. Your phone should now be connecting to the board.<br><br>
@@ -205,12 +224,16 @@
 
 #### 4.3.2 Step 2: Start Advertising
 - After that you should see white/bluish LED blinking and when you open a serial terminal (with baudrate 115200). You will see W UART starting as GAP central.
-- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.<br><br>
+- On the FRDM-MCXW23 board, press SW5 followed by SW2, then you will see the profile shift to GAP Peripheral and now advertising.
+<br><br>
+<img src="./images/SW5SW2.jpg" width="400"/><br>
+<br><br>
 <img src="./images/AdvertisingMode.jpg" width="400"/><br>
 
 
 #### 4.3.3 Step 3: Connect to the IoT ToolBox App
-- Open the installed NXP IoT Toolbox (available from Play Store and App Store) on your mobile phone. Make sure bluetooth connection is ON.
+- Open the installed NXP IoT Toolbox (available from Play Store and App Store) on your mobile phone.
+- Make sure Bluetooth connection is ON, and the location is ON.
 - Inside the application, click on the Wireless UART widget. Scan should start automatically.<br><br>
   [<img src="./images/Wireless_UART.png" width="400"/>](Wireless_UART.png)
 - When a device called NXP_WU appears, click on it. Your phone should now be connecting to the board.<br><br>
